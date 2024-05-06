@@ -18,7 +18,7 @@ defmodule RogueBot.Application do
       # {RogueBot.Worker, arg},
       # Start to serve requests, typically the last entry
       RogueBotWeb.Endpoint,
-      ExampleConsumer,
+      DiscordBot,
       {RogueBot.GameServer, %{stage: :start}}  # Start the game server
     ]
 

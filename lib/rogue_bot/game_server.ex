@@ -22,8 +22,6 @@ defmodule RogueBot.GameServer do
   end
 
   def handle_call({:user_input, input}, _from, state) do
-    IO.inspect(state.stage)
-    IO.inspect(input)
     case {state.stage, input} do
       {:start, "start"} ->
         new_state = Map.put(state, :stage, :door)
